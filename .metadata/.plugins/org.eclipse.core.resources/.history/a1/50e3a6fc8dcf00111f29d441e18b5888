@@ -1,0 +1,28 @@
+package com.app.student.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+//@Controller
+@RestController
+public class StudentController {
+
+	@RequestMapping(value = "/hi", method = RequestMethod.GET)
+	public String sayHello() {
+		return "Hello ...";
+	}
+
+	public List<String> getAllFriends() {
+		List<String> friends = new ArrayList<>();
+
+		friends.add("Rahul");
+		friends.add("Amit");
+		friends.add("Priya");
+		friends.add("Sneha");
+		friends.add("Vikram");
+	}
+
+}

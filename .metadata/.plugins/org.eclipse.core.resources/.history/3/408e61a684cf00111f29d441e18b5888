@@ -1,0 +1,17 @@
+package com.basic.hello;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication   // COnfiguration
+//@SpringBootApplication  @Configuration  + @EnableAutoConfiguartion + @ComponentScan
+public class HelloApplication {
+
+	public static void main(String[] args) {  // JVM --> main
+		System.out.println("Hello ");  
+		SpringApplication.run(HelloApplication.class, args);  // Spring Boot Starts
+		
+
+	}
+
+}
